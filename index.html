@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Multi-step form</title>
+
+</head>
+<body>
+  <main>
+  <div class="flex-container">
+
+    <!-- Sidebar start -->
+
+    <div class="SideBar">
+      <div class="step">
+        <button class="stepnum currentStep">
+        1
+        </button>
+        <div class="stepcontent">
+        <p>STEP 1</p>
+        <h2>YOUR INFO</h2>
+        </div>
+      </div>
+      <div class="step">
+        <button class="stepnum">
+        2
+        </button>
+        <div class="stepcontent">
+        <p>STEP 2</p>
+        <h2>SELECT PLAN</h2>
+        </div>
+      </div>
+
+      <div class="step">
+        <button class="stepnum">
+        3
+        </button>
+        <div class="stepcontent">
+        <p>STEP 3</p>
+        <h2>ADD-ONS</h2>
+        </div>
+      </div>
+
+      <div class="step">
+        <button class="stepnum">
+        4
+        </button>
+        <div class="stepcontent">
+        <p>STEP 1</p>
+        <h2>SUMMARY</h2>
+        </div>
+      </div>
+    </div>
+
+    <!-- form -->
+    
+    <div class="form">
+      <div class="header">
+      <h1>Personal info</h1>
+      <p class="afterH1"style="color:hsl(231, 11%, 63%);font-size: 14px; font-weight: 500;">Please provide your name, email address, and phone number.</p>
+      </div>
+    <div class="formBar">
+      
+      <!-- page 1 -->
+      <form >
+        <h3>Name<span class="warning">This field is required</span></h3>
+        <input placeholder="e.g. Stephen King"type="text">
+        <h3>Email Address<span class="warning">This field is required</span></h3>
+        <input placeholder="e.g. stephenking@lorem.com" type="text">
+        <h3>Phone Number<span class="warning">This field is required</span></h3>
+        <input placeholder="e.g. +1 234 567 890" type="text">
+      </form>
+      </div>
+
+      <!-- page 2 -->
+      
+      <div class="cards" >
+        
+        <div class="card">
+            <img src="assets/images/icon-arcade.svg" alt="Avatar" class="icon">
+            <div class="container">
+              <h4><b>Arcade</b></h4>
+              <p class="price">$9/mo</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="assets/images/icon-advanced.svg" alt="Avatar" class="icon">
+            <div class="container">
+              <h4><b>Advanced</b></h4>
+              <p class="price">$12/mo</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="assets/images/icon-pro.svg" alt="Avatar" class="icon">
+            <div class="container">
+              <h4><b>Pro</b></h4>
+              <p class="price">$15/mo</p>
+            </div>
+          </div>
+      </div>   
+
+      <div class="toggle">
+        <h3 style="display:inline">Monthly</h3>
+        <label class="switch">
+            <input type="checkbox" onclick="toggleF()">
+            <span class="slider round"></span>
+          </label>
+          <h3 style="display:inline">Yearly</h3>
+      </div>
+        
+<!-- page 3 -->
+<div class="addons">
+  <div class="addonitem">
+    <input style="width: 30px;" class="checkbox" type="checkbox" onclick="checkboxFunction1()">
+    <div style="width: 300px;">
+      <h3 class="sp">Online service</h3>
+      <p class="c"style="color:#939191 ;">Acess to multiplayer games</p>
+    </div>
+    <div style="width: 50px ;">
+      <h3 class="q"style="color:hsl(243, 100%, 62%)">+$1/mo<h3>
+    </div>
+  </div>
+  <div class="addonitem">
+    <input onclick="checkboxFunction2()"style="width: 30px;" class="checkbox"type="checkbox">
+    <div style="width: 300px;">
+      <h3 class="sp">Larger storage</h3>
+      <p class="c"style="color:#939191 ;">Extra 1 Tb of cloud save</p>
+    </div>
+    <div style="width: 50px ;">
+      <h3 class="q" style="color:hsl(243, 100%, 62%)">+$2/mo<h3>
+    </div>
+  </div>
+  <div class="addonitem">
+    <input onclick="checkboxFunction3()" style="width: 30px; "class="checkbox" type="checkbox">
+    <div style="width: 300px;">
+      <h3 class="sp">Customizable Profile</h3>
+      <p  class="c"style="color:#939191 ;">Custom theme on your profile</p>
+    </div>
+    <div style="width: 50px;">
+      <h3 class="q" style="color:hsl(243, 100%, 62%)">+$2/mo<h3>
+    </div>
+  </div>
+</div>
+
+<!-- summary -->
+<div class="summary">
+  <table>
+    <tr>
+      <td>
+        <h3 style="margin: 0;"id="type">hjhhj</h3>
+        <a href="#" onclick="linkF()">Change</a>
+      </td>
+      <td>
+        <h3  class="pricetype">hhj</h3>
+      </td>
+    <tr>
+      <td>
+        <hr>
+      </td>
+      <td>
+        <hr>
+      </td>
+    </tr>
+    
+    
+    </tf>
+    
+    <tr class="one">
+      <td>
+        <h3>
+          Online service
+        </h3>
+      </td>
+      <td >
+        <h3 class="pricetype" class="online">+$1/mo</h3>
+      </td>
+    </tr>
+    <tr class="two">
+      <td>
+      <h3 >
+      Larger Storage
+      </h3>
+    </td>
+    <td >
+      <h3 class="pricetype"class="storage">+$2/mo</h3>
+    </td>
+
+    </tr>
+    <tr class="three">
+      <td>
+        <h3>
+        Customizable Profile
+        </h3>
+      </td>
+      <td >
+        <h3 class="pricetype"class="profile">+$2/mo</h3>
+      </td>
+  
+
+    </tr>
+  </table>
+  <table class="t"style="background-color: white;">
+    <tr>
+      <td>
+        <p class="total">jkj</p>
+      </td>
+      <td ><h3 id="lemon" class="pricetype">tyfgh</h3></td>
+    </tr>
+  </table>
+
+</div>
+
+<!-- thankyou -->
+<div class="ty">
+  <img class="tyi"src="assets/images/icon-thank-you.svg" style="height: 100px; width: 100px;">
+  <h1>Thank you!</h1>
+  <p> Thanks for confirming your subscription! We hope you have fun 
+    using our platform. If you ever need support, please feel free 
+    to email us at support@loremgaming.com.</p>
+
+</div>
+<div class="foot">  
+<button class="goback" onclick="goback()"><h3 class="m">Go Back</h3></button>
+
+  <button class="next_step">
+    <h3 style="color: white; margin: 0;">Next Step</h3>
+  </button>
+  </div>
+    </div>
+    </div>
+  </div>
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</main>
+<script src="main.js"></script>
+</body>
+</html>
